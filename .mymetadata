@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="redisDemo"
+  id="myeclipse.1439259461823"
+  context-root="/redisDemo"
+  j2ee-spec="5.0"
+  archive="redisDemo.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
