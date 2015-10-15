@@ -64,8 +64,8 @@ public class RedisPoolInitailizer extends RedisConfigHelper {
           int timeout = Integer.valueOf(
         		  getResourceBundle().getString("redis.timeout")).intValue();
           // 初始化连接池
-//          pool = new JedisPool(getPoolConfig(), ipStr, portStr);
-          pool = new JedisPool(getPoolConfig(), ipStr, portStr, timeout, password);
+          pool = new JedisPool(getPoolConfig(), ipStr, portStr);
+//          pool = new JedisPool(getPoolConfig(), ipStr, portStr, timeout, password);
      }
 
      /**

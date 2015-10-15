@@ -2,6 +2,7 @@ package com.redis.test;
 
 import com.redis.listener.PubSubListener;
 import com.redis.simple.RedisPubAndSub;
+import com.redis.simple.RedisUtil;
 
 public class Pub {
 
@@ -9,11 +10,11 @@ public class Pub {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		final String channer = "testChannel";
-		
-		
-		PubSubListener pubSub = new PubSubListener();
-		RedisPubAndSub.subscriber(pubSub, channer);
+//		final String channer = "testChannel";
+//		
+//		
+//		PubSubListener pubSub = new PubSubListener();
+//		RedisPubAndSub.subscriber(pubSub, channer);
 		
 //		new Thread(new Runnable(){  
 //			PubSubListener pubSub = new PubSubListener();
@@ -26,7 +27,6 @@ public class Pub {
 		
 		
 //		RedisPubAndSub.publish(channer, "redis订阅频道测试");
-		
 		
 		
 		
