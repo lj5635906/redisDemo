@@ -36,7 +36,7 @@ public class RedisConfigHelper {
 
 	/**
 	 * 获取化连接池配置
-	 *
+	 * 
 	 * @return JedisPoolConfig
 	 * */
 	public JedisPoolConfig getPoolConfig() {
@@ -69,13 +69,15 @@ public class RedisConfigHelper {
 		try {
 			// 使用默认工程路径配置文件
 			System.out
-					.println("use the default project local [redis.properties]!--:" + ConstantRedis.CONNECTION_BUNDLE_PROPERTIES_FIRST);
+					.println("use the default project local [redis.properties]!--:"
+							+ ConstantRedis.CONNECTION_BUNDLE_PROPERTIES_FIRST);
 			ResourceBundle bundle = ResourceBundle
 					.getBundle(ConstantRedis.CONNECTION_BUNDLE_PROPERTIES_FIRST);
 			// 如果为空，则使用包内置配置文件
 			if (bundle == null) {
 				System.out
-						.println("use the default inside propertise [redis.properties]!--:"+ConstantRedis.CONNECTION_BUNDLE_PROPERTIES);
+						.println("use the default inside propertise [redis.properties]!--:"
+								+ ConstantRedis.CONNECTION_BUNDLE_PROPERTIES);
 				bundle = ResourceBundle
 						.getBundle(ConstantRedis.CONNECTION_BUNDLE_PROPERTIES);
 			}
@@ -91,7 +93,7 @@ public class RedisConfigHelper {
 
 	/**
 	 * 获取配置文件资源
-	 *
+	 * 
 	 * @return ResourceBundle
 	 * */
 	public ResourceBundle getResourceBundle() {
@@ -122,7 +124,7 @@ public class RedisConfigHelper {
 
 	/**
 	 * 设置配置文件资源
-	 *
+	 * 
 	 * @return ResourceBundle
 	 * */
 	public void setBundleLocal(String local) {
@@ -131,7 +133,7 @@ public class RedisConfigHelper {
 
 	/**
 	 * 设置配置文件资源
-	 *
+	 * 
 	 * @return ResourceBundle
 	 * */
 	public void setBundle(ResourceBundle bundle) {
@@ -172,7 +174,7 @@ public class RedisConfigHelper {
 				times = times * 1000;
 			}
 			return times;
-		}
+		}	
 	}
 
 	/**
